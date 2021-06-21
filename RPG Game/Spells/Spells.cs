@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading;
 
 namespace GameByMe
@@ -17,11 +16,8 @@ namespace GameByMe
 
         ProgramerTools tools = new ProgramerTools();
 
-
-
         public void Cast(Character character1, Character character2)
         {
-            
             if (KindOfSpell == "Damage")
             {
                 CastDamageSpell(character1, character2);
@@ -41,7 +37,6 @@ namespace GameByMe
                 //Here we add debuff spells soon :)
             }
         }
-
         int CastDamageSpell(Character character1, Character character2)
         {
             if (character1.Mana >= ManaUsage)
@@ -64,7 +59,6 @@ namespace GameByMe
                 return 0;
             }
         }
-
         int CastHealingSpell(Character character1, Character character2)
         {
             if (character1.Mana >= ManaUsage)
@@ -87,8 +81,6 @@ namespace GameByMe
                 return 0;
             }
         }
-
-
         public void UseSpell(Character character1, Character character2)
         {
             while (true)
@@ -109,7 +101,6 @@ namespace GameByMe
                 else tools.Texting("Wrong choice...", 2000, ConsoleColor.Red);
             }
         }
-
         public void AskForSpell()
         {
             tools.Texting("Which spell you like to use?" +
@@ -136,7 +127,6 @@ namespace GameByMe
             tools.Texting(character2.Name + " have " + character2.Health +
                 " health points.", 0, ConsoleColor.Yellow);
         }
-
         public void ShowEffectHealing(Character character1, Character character2)
         {
             tools.Texting("\n" + character1.Name + " healing for " + Healing +

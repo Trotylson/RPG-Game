@@ -4,8 +4,6 @@ namespace GameByMe
 {
     class FireMagic : Spells
     {
-        
-        
         ProgramerTools tools = new ProgramerTools();
 
         public void ChooseFireSpell(Character character1, Character character2)

@@ -4,7 +4,6 @@ namespace GameByMe
 {
     class HealingSpells : Spells
     {
-
         ProgramerTools tools = new ProgramerTools();
         
         public void ChooseHealingSpell(Character character1, Character character2)

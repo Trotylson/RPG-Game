@@ -23,8 +23,8 @@ namespace GameByMe
             else if (player.Level >= 3 && player.Level <= 7) RandomMobLvl_3_7();
         }
 
-
         public Random ChoseRandom = new Random();
+
         public void RandomMobLvl_0_3() // mobs for player from 0 - 3 lvl.
         {
             string[] MobsForLvl0_3Tab = { "Rat", "Wolf" }; //<-- mobs for player from 0-3 lvl.
@@ -44,6 +44,7 @@ namespace GameByMe
             string[] MobsForLvl7_15Tab = {/*new mobs for lvl 7-15*/ "" };
             Name = MobsForLvl7_15Tab[ChoseRandom.Next(MobsForLvl7_15Tab.Length)];
         }
+
 //------------ \/ BESTIARY \/ ---------------------------------------------------------------
         public void CallRat()
         {

@@ -17,6 +17,5 @@
         void ShowEffectDamage(Character character1, Character character2);
         void ShowEffectHealing(Character character1, Character character2);
         void Cast(Character character1, Character character2);
-
     }
 }

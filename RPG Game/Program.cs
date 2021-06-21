@@ -7,7 +7,7 @@ namespace GameByMe
     {
         static void Main(string[] args)
         {
-            //-------- its for tests :) -----------
+            //-------- it's for tests :) -----------
             Player player = new Player();
             FightSystem fight = new FightSystem();
             player.GetName();
